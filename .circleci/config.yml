@@ -4,6 +4,7 @@ jobs: # a basic unit of work in a run
   test: # your job name
     macos:
       xcode: 11.3.0 # indicate our selected version of Xcode
+    resource_class: medium
     steps: # a series of commands to run
       - checkout  # pull down code from your version control system.
       - run:
@@ -13,6 +14,7 @@ jobs: # a basic unit of work in a run
   build: 
     macos:
       xcode: 11.3.0 # indicate our selected version of Xcode
+    resource_class: medium
     steps: 
       - checkout
       - run:
