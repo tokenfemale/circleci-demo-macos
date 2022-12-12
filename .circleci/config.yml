@@ -4,7 +4,7 @@ jobs: # a basic unit of work in a run
   test: # your job name
     macos:
       xcode: 13.2.1 # indicate our selected version of Xcode
-    resource_class: medium
+    resource_class: macos.m1.large.gen1.test
     steps: # a series of commands to run
       - checkout  # pull down code from your version control system.
       - run:
@@ -13,8 +13,8 @@ jobs: # a basic unit of work in a run
 
   build: 
     macos:
-      xcode: 13.2.1 # indicate our selected version of Xcode
-    resource_class: medium
+      xcode: 14.0.1 # indicate our selected version of Xcode
+    resource_class: macos.m1.large.gen1.test
     steps: 
       - checkout
       - run:
